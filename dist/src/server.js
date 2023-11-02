@@ -22,7 +22,7 @@ app.set('view engine', 'ejs');
 app.use(express_1.default.json({ limit: '50mb' }));
 app.use((0, cookie_parser_1.default)());
 app.use((0, cors_1.default)({
-    origin: ['http://localhost:3000'],
+    origin: 'http://localhost:3000',
     credentials: true
 }));
 app.use(express_1.default.static(path_1.default.join(process.cwd(), 'public')));
